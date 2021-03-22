@@ -26,4 +26,15 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
             
+            <book id="3">
+                <title>How to Win Friends and Influence People</title>
+                <publisher>Gallery Books</publisher>
+                <isbn>9780671027032</isbn>
+                <pages>288</pages>
+                <author id="1">Dale Carnegie</author>
+                <pubdate>10/1/1998</pubdate>
+                <bnsalesrank>340</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            
 </tns-books>
