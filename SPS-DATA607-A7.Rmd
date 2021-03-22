@@ -16,55 +16,107 @@ library(jsonlite)
 library(RCurl)
 
 ```
+### Use the link below to view the .csv file
 
-##Sample 1
+(https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-D607-A-7.csv)
+
+
+### A Preview of the data in .csv format
+
+```{r csvdataview}
+
+tnsbooks <- read.csv(file ="https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-D607-A-7.csv")
+tnsbooks <- data.frame(tnsbooks)
+
+tnsbooks
+
+```
+
+## Loading the data for each DataFrame
+
+### HTML Frame Load
+
+#### Use the link below to view the .html file
+
+(https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.html)
 
 ```{r html}
 
-#html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
-#html <- GET(html)
-#html <- rawToChar(html$content)
-#html <- htmlParse(html)
-#html <- readHTMLTable(html)
-#htmldf <- data.frame(html)
-
-#htmldf
+html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
+html <- GET(html)
+html <- rawToChar(html$content)
+html <- htmlParse(html)
+html <- readHTMLTable(html)
+htmldf <- data.frame(html)
 
 ```
 
-#######
+### XML Frame Load
+
+#### Use the link below to view the .xml file
+
+(https://github.com/tagensingh/sps-data607-week7/blob/main/testxml2.xml)
 
 ```{r xml}
 
-#xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
-#xml <- GET(xml)
-#xml <- rawToChar(xml$content)
-#xml <- xmlParse(xml)
-#xml <- xmlToList(xml)
-#xmldf <- data.frame(xml)
-#head(xmldf)
-
-#######
-
-xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
+xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/testxml2.xml"
 
 xml_file <- getURL(xml_url)
-
+xmldf <- xmlToDataFrame(xml_file)
 
 ```
 
+### JSON Frame Load
 
-#```{r json}
+#### Use the link below to view the .json file
+
+(https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.json)
+
+```{r json}
 json <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json"
 json <- GET(json)
 json <- rawToChar(json$content)
 json <- fromJSON(json)
 jsdf <- data.frame(json)
 
+```
+
+## Comparing the DataFrames - 
+
+```{r dfcomparisons}
+
+htmldf
+
+xmldf
+
 jsdf
 
 ```
 
+## Comparing the DateFrame Structures
+
+```{r dfstructures}
+
+str(htmldf)
+
+str(xmldf)
+
+str(jsdf)
+
+```
+
+## My Conclusions
+
+#### The dataset can be read into R using all three of these methods. However the xml and json formats must be carefully formatted to be correctly read by the package. The power of the json and xml formats is in the amuont of data that can stored and then uploaded into a relational database for example - I have uploaded json data files with upwards of 350 MB recently. HTML and XML files look identical but the json structure is different but has a visually similar look. 
+
+####Note - The Rcurl package and library is producing an error when used on desktop R Studion. This work was produced using the rstudio.cloud version of R Studio
+
+## The error encountered was :
+
+#### Quitting from lines 38-56 (SPS-DATA607-A7_v2.Rmd)Error in function (type, msg, asError = TRUE): 
+####error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
+####Calls: <Anonymous> ... eval -> getURL -> curlPerform -> <Anonymous> -> fun
+####Execution halted
 
 
-## R Markdown
+

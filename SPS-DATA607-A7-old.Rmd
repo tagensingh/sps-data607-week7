@@ -1,0 +1,70 @@
+---
+title: "SPS-DATA607-A-7"
+author: "Tage N Singh"
+date: "3/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls())
+
+library(httr)
+library(XML)
+library(jsonlite)
+library(RCurl)
+
+```
+
+##Sample 1
+
+```{r html}
+
+#html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
+#html <- GET(html)
+#html <- rawToChar(html$content)
+#html <- htmlParse(html)
+#html <- readHTMLTable(html)
+#htmldf <- data.frame(html)
+
+#htmldf
+
+```
+
+#######
+
+```{r xml}
+
+#xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
+#xml <- GET(xml)
+#xml <- rawToChar(xml$content)
+#xml <- xmlParse(xml)
+#xml <- xmlToList(xml)
+#xmldf <- data.frame(xml)
+#head(xmldf)
+
+#######
+
+xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
+
+xml_file <- getURL(xml_url)
+
+
+```
+
+
+#```{r json}
+json <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json"
+json <- GET(json)
+json <- rawToChar(json$content)
+json <- fromJSON(json)
+jsdf <- data.frame(json)
+
+jsdf
+
+```
+
+
+
+## R Markdown
