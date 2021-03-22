@@ -391,74 +391,291 @@ xml &lt;- GET(xml)
 xml &lt;- rawToChar(xml$content)
 xml &lt;- xmlParse(xml)
 xml &lt;- xmlToList(xml)
-xml &lt;- data.frame(xml)
+#xml &lt;- data.frame(xml)
 
 xml</code></pre>
-<pre><code>##    area.subject area.book.title area.book.publisher area.book.isbn
-## id    TNS-Books he Code Breaker  Simon and Schuster  9781982115852
-##    area.book.pages area.book.author.text area.book.author..attrs
-## id             560       Walter Isaacson                       1
-##    area.book.pubdate area.book.bnsalesrank area.book.attribute.text
-## id          3/9/2021                    13                Knowledge
-##    area.book.attribute..attrs area.book..attrs area.book.title.1
-## id                          1                1       Freakonomic
-##       area.book.publisher.1 area.book.isbn.1 area.book.pages.1
-## id HarperCollins Publishers    9780061956270               336
-##    area.book.author.text.1 area.book.author..attrs.1 area.book.author.text.2
-## id        Steven D. Levitt                         1        Stephen J Dubner
-##    area.book.author..attrs.2 area.book.pubdate.1 area.book.bnsalesrank.1
-## id                         2            9/1/2009                   42497
-##    area.book.attribute.text.1 area.book.attribute..attrs.1 area.book..attrs.1
-## id                  Knowledge                            1                  2
-##                          area.book.title.2 area.book.publisher.2
-## id How to Win Friends and Influence People         Gallery Books
-##    area.book.isbn.2 area.book.pages.2 area.book.author.text.3
-## id    9780671027032               288           Dale Carnegie
-##    area.book.author..attrs.3 area.book.pubdate.2 area.book.bnsalesrank.2
-## id                         1           10/1/1998                     340
-##    area.book.attribute.text.2 area.book.attribute..attrs.2 area.book..attrs.2
-## id                  Knowledge                            1                  3
-##                                area.book.title.3 area.book.publisher.3
-## id Mathematical Statistics with Resampling and R                 Wiley
-##    area.book.isbn.3 area.book.pages.3 area.book.author.text.4
-## id    9781118029855               418           Laura Chihara
-##    area.book.author..attrs.4 area.book.author.text.5 area.book.author..attrs.5
-## id                         1          Tim Hesterberg                         2
-##    area.book.attribute.text.3 area.book.attribute..attrs.3
-## id                  Exercises                            1
-##    area.book.attribute.text.4 area.book.attribute..attrs.4
-## id              Illustrations                            2
-##    area.book.attribute.text.5 area.book.attribute..attrs.5 area.book..attrs.3
-## id                Readability                            3                  4
-##                                area.book.title.4 area.book.publisher.4
-## id Mathematical Statistics with Resampling and R                 Wiley
-##    area.book.isbn.4 area.book.pages.4 area.book.author.text.6
-## id    9781118029855               418           Laura Chihara
-##    area.book.author..attrs.6 area.book.author.text.7 area.book.author..attrs.7
-## id                         1          Tim Hesterberg                         2
-##    area.book.attribute.text.6 area.book.attribute..attrs.6
-## id                  Exercises                            1
-##    area.book.attribute.text.7 area.book.attribute..attrs.7
-## id              Illustrations                            2
-##    area.book.attribute.text.8 area.book.attribute..attrs.8 area.book..attrs.4
-## id                Readability                            3                  5
-##                                area.book.title.5 area.book.publisher.5
-## id Mathematical Statistics with Resampling and R                 Wiley
-##    area.book.isbn.5 area.book.pages.5 area.book.author.text.8
-## id    9781118029855               418           Laura Chihara
-##    area.book.author..attrs.8 area.book.author.text.9 area.book.author..attrs.9
-## id                         1          Tim Hesterberg                         2
-##    area.book.attribute.text.9 area.book.attribute..attrs.9
-## id                  Exercises                            1
-##    area.book.attribute.text.10 area.book.attribute..attrs.10
-## id               Illustrations                             2
-##    area.book.attribute.text.11 area.book.attribute..attrs.11 area.book..attrs.5
-## id                 Readability                             3                  6
-##    area..attrs
-## id           1</code></pre>
-<pre class="r"><code>#xml_url &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml&quot;
-
-#xml_file &lt;- getURL(xml_url)</code></pre>
+<pre><code>## $area
+## $area$subject
+## [1] &quot;TNS-Books&quot;
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;he Code Breaker&quot;
+## 
+## $area$book$publisher
+## [1] &quot;Simon and Schuster&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9781982115852&quot;
+## 
+## $area$book$pages
+## [1] &quot;560&quot;
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Walter Isaacson&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;3/9/2021&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;13&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;Freakonomic&quot;
+## 
+## $area$book$publisher
+## [1] &quot;HarperCollins Publishers&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9780061956270&quot;
+## 
+## $area$book$pages
+## [1] &quot;336&quot;
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Steven D. Levitt&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Stephen J Dubner&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;2&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;9/1/2009&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;42497&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;2&quot; 
+## 
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;How to Win Friends and Influence People&quot;
+## 
+## $area$book$publisher
+## [1] &quot;Gallery Books&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9780671027032&quot;
+## 
+## $area$book$pages
+## [1] &quot;288&quot;
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Dale Carnegie&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;10/1/1998&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;340&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;3&quot; 
+## 
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;King Rat&quot;
+## 
+## $area$book$publisher
+## [1] &quot;Blackstone Publishing&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9781982537593&quot;
+## 
+## $area$book$pages
+## NULL
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;James Clavell&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;8/13/2019&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;76054&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;4&quot; 
+## 
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;Outliers: The Story of Success id=\&quot;5\&quot;&quot;
+## 
+## $area$book$publisher
+## [1] &quot;Little, Brown and Company&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9780316017930&quot;
+## 
+## $area$book$pages
+## [1] &quot;336&quot;
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Malcolm Gladwell&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;6/7/2011&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;3474&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;5&quot; 
+## 
+## 
+## $area$book
+## $area$book$title
+## [1] &quot;R for Data Science: Import, Tidy, Transform, Visualize, and Model Data&quot;
+## 
+## $area$book$publisher
+## [1] &quot;O&#39;Reilly Media&quot;
+## 
+## $area$book$isbn
+## [1] &quot;9781491910399&quot;
+## 
+## $area$book$pages
+## [1] &quot;520&quot;
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Hadley Wickham&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$author
+## $area$book$author$text
+## [1] &quot;Garrett Grolemund&quot;
+## 
+## $area$book$author$.attrs
+##  id 
+## &quot;2&quot; 
+## 
+## 
+## $area$book$pubdate
+## [1] &quot;1/7/2017&quot;
+## 
+## $area$book$bnsalesrank
+## [1] &quot;100080&quot;
+## 
+## $area$book$attribute
+## $area$book$attribute$text
+## [1] &quot;Knowledge&quot;
+## 
+## $area$book$attribute$.attrs
+##  id 
+## &quot;1&quot; 
+## 
+## 
+## $area$book$.attrs
+##  id 
+## &quot;6&quot; 
+## 
+## 
+## $area$.attrs
+##  id 
+## &quot;1&quot;</code></pre>
+<pre class="r"><code>json &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json&quot;
+json &lt;- GET(json)
+#json &lt;- rawToChar(json$content)
+#json &lt;- fromJSON(json)
+#JSON &lt;- data.frame(json)</code></pre>
 <div id="r-markdown" class="section level2">
 <h2>R Markdown</h2>
 </div>
