@@ -19,7 +19,7 @@ library(RCurl)
 
 ##Sample 1
 
-```{r}
+```{r html}
 
 html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
 html <- GET(html)
@@ -32,7 +32,7 @@ html
 
 ```
 
-```{r}
+```{r xml}
 
 #xml_url <- "https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml"
 
