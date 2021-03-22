@@ -21,16 +21,18 @@ library(RCurl)
 
 ```{r html}
 
-html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
-html <- GET(html)
-html <- rawToChar(html$content)
-html <- htmlParse(html)
-html <- readHTMLTable(html)
-HTML <- data.frame(html)
+#html <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html"
+#html <- GET(html)
+#html <- rawToChar(html$content)
+#html <- htmlParse(html)
+#html <- readHTMLTable(html)
+#htmldf <- data.frame(html)
 
-html
+#htmldf
 
 ```
+
+#######
 
 ```{r xml}
 
@@ -39,14 +41,14 @@ xml <- GET(xml)
 xml <- rawToChar(xml$content)
 xml <- xmlParse(xml)
 xml <- xmlToList(xml)
-#xml <- data.frame(xml)
+xmldf <- data.frame(xml)
 
-xml
+xmldf
 
 ```
 
 
-```{r json}
+#```{r json}
 json <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json"
 json <- GET(json)
 json <- rawToChar(json$content)
