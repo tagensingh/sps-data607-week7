@@ -1,0 +1,65 @@
+<textbooks>
+    <area id="1">
+        <subject>TNS-Books</subject>
+            <book id="1">
+                <title>he Code Breaker</title>
+                <publisher>Simon and Schuster</publisher>
+                <isbn>9781982115852</isbn>
+                <pages>560</pages>
+                <author id="1">Walter Isaacson</author>
+                <pubdate>3/9/2021</pubdate>
+                <bnsalesrank>13</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            <book id="2">
+                <title>Freakonomic</title>
+                <publisher>HarperCollins Publishers</publisher>
+                <isbn>9780061956270</isbn>
+                <pages>336</pages>
+                <author id="1">Steven D. Levitt</author>
+                <pubdate>9/1/2009</pubdate>
+                <bnsalesrank>42497</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            <book id="3">
+                <title>How to Win Friends and Influence People</title>
+                <publisher>Gallery Books</publisher>
+                <isbn>9780671027032</isbn>
+                <pages>288</pages>
+                <author id="1">Dale Carnegie</author>
+                <pubdate>10/1/1998</pubdate>
+                <bnsalesrank>340</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            <book id="4">
+                <title>King Rat</title>
+                <publisher>Blackstone Publishing</publisher>
+                <isbn>9781982537593</isbn>
+                <pages></pages>
+                <author id="1">James Clavell</author>
+                <pubdate>8/13/2019</pubdate>
+                <bnsalesrank>76054</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            <book id="5">
+                <title>Outliers: The Story of Success id="5"</title>
+                <publisher>Little, Brown and Company</publisher>
+                <isbn>9780316017930</isbn>
+                <pages>336</pages>
+                <author id="1">Malcolm Gladwell</author>
+                <pubdate>6/7/2011</pubdate>
+                <bnsalesrank>3474</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+            <book id="6">
+                <title>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</title>
+                <publisher>O'Reilly Media</publisher>
+                <isbn>9781491910399</isbn>
+                <pages>520</pages>
+                <author id="1">Hadley Wickham</author>
+                <pubdate>1/7/2017</pubdate>
+                <bnsalesrank>100080</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+            </book>
+    </area>
+</textbooks>
