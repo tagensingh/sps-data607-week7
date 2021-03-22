@@ -39,19 +39,19 @@ xml <- GET(xml)
 xml <- rawToChar(xml$content)
 xml <- xmlParse(xml)
 xml <- xmlToList(xml)
-xml <- data.frame(xml)
+#xml <- data.frame(xml)
 
 xml
 
 ```
 
 
-```{r xml2}
-
-#xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml"
-
-#xml_file <- getURL(xml_url)
-
+```{r json}
+json <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json"
+json <- GET(json)
+json <- rawToChar(json$content)
+json <- fromJSON(json)
+JSON <- data.frame(json)
 ```
 
 

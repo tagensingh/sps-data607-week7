@@ -1,0 +1,60 @@
+{
+   "Book Name": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+   "Book Author": "Walter Isaacson",
+   "Book Author": "",
+   "ISBN": 9781982115852,
+   "Publisher": "Simon & Schuster",
+   "Publication Date": "3/9/2021",
+   "Pages": 560,
+   "BN Sales Rank": 13
+ },
+ {
+   "Book Name": "Freakonomics",
+   "Book Author": "Steven D. Levitt",
+   "Book Author": "Stephen J Dubner",
+   "ISBN": 9780061956270,
+   "Publisher": "HarperCollins Publishers",
+   "Publication Date": "9/1/2009",
+   "Pages": 336,
+   "BN Sales Rank": 42497
+ },
+ {
+   "Book Name": "How to Win Friends and Influence People",
+   "Book Author": "Dale Carnegie",
+   "Book Author": "",
+   "ISBN": 9780671027032,
+   "Publisher": "Gallery Books",
+   "Publication Date": "10/1/1998",
+   "Pages": 288,
+   "BN Sales Rank": 340
+ },
+ {
+   "Book Name": "King Rat",
+   "Book Author": "James Clavell",
+   "Book Author": "",
+   "ISBN": 9781982537593,
+   "Publisher": "Blackstone Publishing",
+   "Publication Date": "8/13/2019",
+   "Pages": null,
+   "BN Sales Rank": 76054
+ },
+ {
+   "Book Name": "Outliers: The Story of Success",
+   "Book Author": "Malcolm Gladwell",
+   "Book Author": "",
+   "ISBN": 9780316017930,
+   "Publisher": "Little, Brown and Company",
+   "Publication Date": "6/7/2011",
+   "Pages": 336,
+   "BN Sales Rank": 3474
+ },
+ {
+   "Book Name": "R for Data Science: Import, Tidy, Transform, Visualize, and Model Data",
+   "Book Author": "Hadley Wickham",
+   "Book Author": "Garrett Grolemund",
+   "ISBN": 9781491910399,
+   "Publisher": "O'Reilly Media",
+   "Publication Date": "1/7/2017",
+   "Pages": 520,
+   "BN Sales Rank": 100080
+ }
