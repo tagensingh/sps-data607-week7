@@ -356,9 +356,7 @@ pre code {
 
 
 <p>##Sample 1</p>
-<pre class="r"><code>#html_url &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html&quot;
-
-html &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html&quot;
+<pre class="r"><code>html &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.html&quot;
 html &lt;- GET(html)
 html &lt;- rawToChar(html$content)
 html &lt;- htmlParse(html)
@@ -388,6 +386,9 @@ html</code></pre>
 ## 4        8/13/2019               76054
 ## 5         6/7/2011   336          3474
 ## 6         1/7/2017   520        100080</code></pre>
+<pre class="r"><code>xml_url &lt;- &quot;https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml&quot;
+
+#xmlfile &lt;- xmlTreeParse(&quot;https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml&quot;)</code></pre>
 <div id="r-markdown" class="section level2">
 <h2>R Markdown</h2>
 </div>
