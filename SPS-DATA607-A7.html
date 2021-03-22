@@ -386,7 +386,7 @@ html</code></pre>
 ## 4        8/13/2019               76054
 ## 5         6/7/2011   336          3474
 ## 6         1/7/2017   520        100080</code></pre>
-<pre class="r"><code>xml &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml&quot;
+<pre class="r"><code>xml &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/testxml.xml&quot;
 xml &lt;- GET(xml)
 xml &lt;- rawToChar(xml$content)
 xml &lt;- xmlParse(xml)
@@ -394,12 +394,46 @@ xml &lt;- xmlToList(xml)
 xml &lt;- data.frame(xml)
 
 xml</code></pre>
-<pre><code>##           bookname          author          isbn          publisher  pubdate
-## 1 The Code Breaker Walter Isaacson 9781982115852 Simon and Schuster 3/9/2021
-##   pages bnsalesrank   bookname.1         author.1         author.2
-## 1   560          13 Freakonomics Steven D. Levitt Stephen J Dubner
-##          isbn.1              publisher.1 pubdate.1 pages.1 bnsalesrank.1
-## 1 9780061956270 HarperCollins Publishers  9/1/2009     336         42497</code></pre>
+<pre><code>##    area.subject                   area.book.title area.book.publisher
+## id  Mathematics Applied Linear Statistical Models         McGraw Hill
+##    area.book.isbn area.book.pages area.book.author.text area.book.author..attrs
+## id  9780073108742            1396        Michael Kutner                       1
+##    area.book.author.text.1 area.book.author..attrs.1 area.book.author.text.2
+## id              William Li                         2  Christopher Nachtsheim
+##    area.book.author..attrs.2 area.book.author.text.3 area.book.author..attrs.3
+## id                         3              John Neter                         4
+##    area.book.attribute.text area.book.attribute..attrs
+## id                Exercises                          1
+##    area.book.attribute.text.1 area.book.attribute..attrs.1
+## id              Illustrations                            2
+##    area.book.attribute.text.2 area.book.attribute..attrs.2 area.book..attrs
+## id                Readability                            3                1
+##                                            area.book.title.1
+## id Mathematical Proofs: A Transition to Advanced Mathematics
+##    area.book.publisher.1 area.book.isbn.1 area.book.pages.1
+## id               Pearson    9780321390530               365
+##    area.book.author.text.4 area.book.author..attrs.4 area.book.author.text.5
+## id          Gary Chartrand                         1              Ping Zhang
+##    area.book.author..attrs.5 area.book.author.text.6 area.book.author..attrs.6
+## id                         2         Albert Polimeni                         3
+##    area.book.attribute.text.3 area.book.attribute..attrs.3
+## id                  Exercises                            1
+##    area.book.attribute.text.4 area.book.attribute..attrs.4 area.book..attrs.1
+## id                Readability                            2                  2
+##                                area.book.title.2 area.book.publisher.2
+## id Mathematical Statistics with Resampling and R                 Wiley
+##    area.book.isbn.2 area.book.pages.2 area.book.author.text.7
+## id    9781118029855               418           Laura Chihara
+##    area.book.author..attrs.7 area.book.author.text.8 area.book.author..attrs.8
+## id                         1          Tim Hesterberg                         2
+##    area.book.attribute.text.5 area.book.attribute..attrs.5
+## id                  Exercises                            1
+##    area.book.attribute.text.6 area.book.attribute..attrs.6
+## id              Illustrations                            2
+##    area.book.attribute.text.7 area.book.attribute..attrs.7 area.book..attrs.2
+## id                Readability                            3                  3
+##    area..attrs
+## id           1</code></pre>
 <pre class="r"><code>#xml_url &lt;- &quot;https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml&quot;
 
 #xml_file &lt;- getURL(xml_url)</code></pre>

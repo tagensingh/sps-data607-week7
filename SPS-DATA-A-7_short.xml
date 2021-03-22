@@ -1,5 +1,5 @@
 <Authors>
-	 <bookname>The Code Breaker</bookname>
+	 <bookname id="1">The Code Breaker</bookname>
 	 <author>Walter Isaacson</author>
 	 <author>a</author>
 	 <isbn>9781982115852</isbn>
@@ -7,8 +7,7 @@
 	 <pubdate>3/9/2021</pubdate>
 	 <pages>560</pages>
 	 <bnsalesrank>13</bnsalesrank>
-	 
-	 <bookname>Freakonomics</bookname>
+	 <bookname>Freakonomics id="2"</bookname>
 	 <author>Steven D. Levitt</author>
 	 <author>Stephen J Dubner</author>
 	 <isbn>9780061956270</isbn>
@@ -16,8 +15,7 @@
 	 <pubdate>9/1/2009</pubdate>
 	 <pages>336</pages>
 	 <bnsalesrank>42497</bnsalesrank>
-	 
-	 <bookname>How to Win Friends and Influence People</bookname>
+	 <bookname>How to Win Friends and Influence People id="3"</bookname>
 	 <author>Dale Carnegie</author>
 	 <author>a</author>
 	 <isbn>9780671027032</isbn>
@@ -25,8 +23,7 @@
 	 <pubdate>10/1/1998</pubdate>
 	 <pages>288</pages>
 	 <bnsalesrank>340</bnsalesrank>
-	 
-	 <bookname>King Rat</bookname>
+	 <bookname>King Rat id="4"</bookname>
 	 <author>James Clavell</author>
 	 <author>a</author>
 	 <isbn>9781982537593</isbn>
@@ -34,8 +31,7 @@
 	 <pubdate>8/13/2019</pubdate>
 	 <pages></pages>
 	 <bnsalesrank>76054</bnsalesrank>
-	 
-	 <bookname>Outliers: The Story of Success</bookname>
+	 <bookname>Outliers: The Story of Success id="5"</bookname>
 	 <author>Malcolm Gladwell</author>
 	 <author>a</author>
 	 <isbn>9780316017930</isbn>
@@ -43,8 +39,7 @@
 	 <pubdate>6/7/2011</pubdate>
 	 <pages>336</pages>
 	 <bnsalesrank>3474</bnsalesrank>
-	 
-	 <bookname>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</bookname>
+	 <bookname>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data id="6"</bookname>
 	 <author>Hadley Wickham</author>
 	 <author>Garrett Grolemund</author>
 	 <isbn>9781491910399</isbn>

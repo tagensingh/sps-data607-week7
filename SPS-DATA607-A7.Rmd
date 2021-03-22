@@ -34,7 +34,7 @@ html
 
 ```{r xml}
 
-xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml"
+xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7.xml"
 xml <- GET(xml)
 xml <- rawToChar(xml$content)
 xml <- xmlParse(xml)
