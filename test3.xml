@@ -37,15 +37,4 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
             
-            <book id="4">
-                <title>King Rat</title>
-                <publisher>Blackstone Publishing</publisher>
-                <isbn>9781982537593</isbn>
-                <pages></pages>
-                <author id="1">James Clavell</author>
-                <pubdate>8/13/2019</pubdate>
-                <bnsalesrank>76054</bnsalesrank>
-                <attribute id="1">Knowledge</attribute>
-            </book>
-            
 </tns-books>
