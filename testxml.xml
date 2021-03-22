@@ -33,37 +33,35 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
 			<book id="4">
-                <title>Mathematical Statistics with Resampling and R</title>
-                <publisher>Wiley</publisher>
-                <isbn>9781118029855</isbn>
-                <pages>418</pages>
-                <author id="1">Laura Chihara</author>
-                <author id="2">Tim Hesterberg</author>
-                <attribute id="1">Exercises</attribute>
-                <attribute id="2">Illustrations</attribute>
-                <attribute id="3">Readability</attribute>
-            </book>
+                <title>King Rat</title>
+                <publisher>Blackstone Publishing</publisher>
+                <isbn>9781982537593</isbn>
+                <pages></pages>
+                <author id="1">James Clavell</author>
+                <pubdate>8/13/2019</pubdate>
+                <bnsalesrank>76054</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+                </book>
 			<book id="5">
-                <title>Mathematical Statistics with Resampling and R</title>
-                <publisher>Wiley</publisher>
-                <isbn>9781118029855</isbn>
-                <pages>418</pages>
-                <author id="1">Laura Chihara</author>
-                <author id="2">Tim Hesterberg</author>
-                <attribute id="1">Exercises</attribute>
-                <attribute id="2">Illustrations</attribute>
-                <attribute id="3">Readability</attribute>
-            </book>
+                <title>Outliers: The Story of Success id="5"</title>
+                <publisher>Little, Brown and Company</publisher>
+                <isbn>9780316017930</isbn>
+                <pages>336</pages>
+                <author id="1">Malcolm Gladwell</author>
+                <pubdate>6/7/2011</pubdate>
+                <bnsalesrank>3474</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+                </book>
 			<book id="6">
-                <title>Mathematical Statistics with Resampling and R</title>
-                <publisher>Wiley</publisher>
-                <isbn>9781118029855</isbn>
-                <pages>418</pages>
-                <author id="1">Laura Chihara</author>
-                <author id="2">Tim Hesterberg</author>
-                <attribute id="1">Exercises</attribute>
-                <attribute id="2">Illustrations</attribute>
-                <attribute id="3">Readability</attribute>
-            </book>
+                <title>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</title>
+                <publisher>O'Reilly Media</publisher>
+                <isbn>9781491910399</isbn>
+                <pages>520</pages>
+                <author id="1">Hadley Wickham</author>
+                <author id="2">Garrett Grolemund</author>
+				<pubdate>1/7/2017</pubdate>
+				<bnsalesrank>100080</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
+                </book>
     </area>
 </textbooks>
