@@ -374,8 +374,8 @@ xml &lt;- rawToChar(xml$content)
 xmldf &lt;- data.frame(xml)
 
 xmldf</code></pre>
-<pre><code>##                                       xml
-## 1 &lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</code></pre>
+<pre><code>##                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              xml
+## 1 &lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt; \n\n&lt;!-- TNS Reading Interests --&gt;\n\n&lt;tns-books&gt; \n\t\t&lt;book id=&quot;1&quot;&gt;\n                &lt;title&gt;he Code Breaker&lt;/title&gt;\n                &lt;publisher&gt;Simon and Schuster&lt;/publisher&gt;\n                &lt;isbn&gt;9781982115852&lt;/isbn&gt;\n                &lt;pages&gt;560&lt;/pages&gt;\n                &lt;author id=&quot;1&quot;&gt;Walter Isaacson&lt;/author&gt;\n                &lt;pubdate&gt;3/9/2021&lt;/pubdate&gt;\n                &lt;bnsalesrank&gt;13&lt;/bnsalesrank&gt;\n                &lt;attribute id=&quot;1&quot;&gt;Knowledge&lt;/attribute&gt;\n            &lt;/book&gt;\n\n\n\n&lt;/tns-books&gt;\n</code></pre>
 <p>#```{r json} json &lt;- “<a href="https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json" class="uri">https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json</a>” json &lt;- GET(json) json &lt;- rawToChar(json$content) json &lt;- fromJSON(json) jsdf &lt;- data.frame(json)</p>
 <p>jsdf</p>
 <p>```</p>
