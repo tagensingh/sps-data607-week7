@@ -14,29 +14,5 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
             
-            <book id="2">
-                <title>Freakonomic</title>
-                <publisher>HarperCollins Publishers</publisher>
-                <isbn>9780061956270</isbn>
-                <pages>336</pages>
-                <author id="1">Steven D. Levitt</author>
-                <author id="1">Stephen J Dubner</author>
-                <pubdate>9/1/2009</pubdate>
-                <bnsalesrank>42497</bnsalesrank>
-                <attribute id="1">Knowledge</attribute>
-            </book>
-            
-            <book id="3">
-                <title>How to Win Friends and Influence People</title>
-                <publisher>Gallery Books</publisher>
-                <isbn>9780671027032</isbn>
-                <pages>288</pages>
-                <author id="1">Dale Carnegie</author>
-                <pubdate>10/1/1998</pubdate>
-                <bnsalesrank>340</bnsalesrank>
-                <attribute id="1">Knowledge</attribute>
-            </book>
-            
-            
             
 </tns-books>

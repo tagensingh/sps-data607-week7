@@ -36,15 +36,20 @@ library(RCurl)
 
 ```{r xml}
 
-xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
-xml <- GET(xml)
-xml <- rawToChar(xml$content)
-xml <- xmlParse(xml)
-xml <- xmlToList(xml)
-xmldf <- data.frame(xml)
+#xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
+#xml <- GET(xml)
+#xml <- rawToChar(xml$content)
+#xml <- xmlParse(xml)
+#xml <- xmlToList(xml)
+#xmldf <- data.frame(xml)
+#head(xmldf)
 
+#######
 
-head(xmldf)
+xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/test3.xml"
+
+xml_file <- getURL(xml_url)
+
 
 ```
 
