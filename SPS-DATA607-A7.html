@@ -378,8 +378,14 @@ xmldf</code></pre>
 ## id he Code Breaker Simon and Schuster 9781982115852        560  Walter Isaacson
 ##    book.author..attrs book.pubdate book.bnsalesrank book.attribute.text
 ## id                  1     3/9/2021               13           Knowledge
-##    book.attribute..attrs book..attrs
-## id                     1           1</code></pre>
+##    book.attribute..attrs book..attrs book.title.1         book.publisher.1
+## id                     1           1 Freakonomics HarperCollins Publishers
+##      book.isbn.1 book.pages.1 book.author.text.1 book.author..attrs.1
+## id 9780061956270          336   Steven D. Levitt                    1
+##    book.pubdate.1 book.bnsalesrank.1 book.attribute.text.1
+## id       9/1/2009              42497             Knowledge
+##    book.attribute..attrs.1 book..attrs.1
+## id                       1             2</code></pre>
 <p>#```{r json} json &lt;- “<a href="https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json" class="uri">https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json</a>” json &lt;- GET(json) json &lt;- rawToChar(json$content) json &lt;- fromJSON(json) jsdf &lt;- data.frame(json)</p>
 <p>jsdf</p>
 <p>```</p>
