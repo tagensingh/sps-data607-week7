@@ -43,9 +43,8 @@ xml <- xmlParse(xml)
 xml <- xmlToList(xml)
 xmldf <- data.frame(xml)
 
-xmldf
 
-tibble(xmldf)
+head(xmldf)
 
 ```
 

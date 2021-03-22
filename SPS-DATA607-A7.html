@@ -373,22 +373,8 @@ xml &lt;- xmlParse(xml)
 xml &lt;- xmlToList(xml)
 xmldf &lt;- data.frame(xml)
 
-xmldf</code></pre>
-<pre><code>##          book.title     book.publisher     book.isbn book.pages
-## id The Code Breaker Simon and Schuster 9781982115852        560
-##    book.author.text book.author..attrs book.pubdate book.bnsalesrank
-## id  Walter Isaacson                  1     3/9/2021               13
-##    book.attribute.text book.attribute..attrs book..attrs book.title.1
-## id           Knowledge                     1           1  Freakonomic
-##            book.publisher.1   book.isbn.1 book.pages.1 book.author.text.1
-## id HarperCollins Publishers 9780061956270          336   Steven D. Levitt
-##    book.author..attrs.1 book.author.text.2 book.author..attrs.2 book.pubdate.1
-## id                    1   Stephen J Dubner                    1       9/1/2009
-##    book.bnsalesrank.1 book.attribute.text.1 book.attribute..attrs.1
-## id              42497             Knowledge                       1
-##    book..attrs.1
-## id             2</code></pre>
-<pre class="r"><code>head(xmldf)</code></pre>
+
+head(xmldf)</code></pre>
 <pre><code>##          book.title     book.publisher     book.isbn book.pages
 ## id The Code Breaker Simon and Schuster 9781982115852        560
 ##    book.author.text book.author..attrs book.pubdate book.bnsalesrank
