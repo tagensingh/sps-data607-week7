@@ -6,8 +6,7 @@
                 <publisher>Simon and Schuster</publisher>
                 <isbn>9781982115852</isbn>
                 <pages>560</pages>
-                <author id="1">Michael Kutner</author>
-                <author id="2">William Li</author>
+                <author id="1">Walter Isaacson</author>
                 <pubdate>3/9/2021</pubdate>
                 <bnsalesrank>13</bnsalesrank>
                 <attribute id="1">Knowledge</attribute>
@@ -24,15 +23,14 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
             <book id="3">
-                <title>Mathematical Statistics with Resampling and R</title>
-                <publisher>Wiley</publisher>
-                <isbn>9781118029855</isbn>
-                <pages>418</pages>
-                <author id="1">Laura Chihara</author>
-                <author id="2">Tim Hesterberg</author>
-                <attribute id="1">Exercises</attribute>
-                <attribute id="2">Illustrations</attribute>
-                <attribute id="3">Readability</attribute>
+                <title>How to Win Friends and Influence People</title>
+                <publisher>Gallery Books</publisher>
+                <isbn>9780671027032</isbn>
+                <pages>288</pages>
+                <author id="1">Dale Carnegie</author>
+                <pubdate>10/1/1998</pubdate>
+                <bnsalesrank>340</bnsalesrank>
+                <attribute id="1">Knowledge</attribute>
             </book>
 			<book id="4">
                 <title>Mathematical Statistics with Resampling and R</title>
