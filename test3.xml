@@ -14,16 +14,4 @@
                 <attribute id="1">Knowledge</attribute>
             </book>
             
-            <book id="2">
-                <title>Freakonomics</title>
-                <publisher>HarperCollins Publishers</publisher>
-                <isbn>9780061956270</isbn>
-                <pages>336</pages>
-                <author id="1">Steven D. Levitt</author>
-                <author id="2">Stephen J Dubner</author>
-                <pubdate>9/1/2009</pubdate>
-                <bnsalesrank>42497</bnsalesrank>
-                <attribute id="1">Knowledge</attribute>
-            </book>
-            
 </tns-books>
