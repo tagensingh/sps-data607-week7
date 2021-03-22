@@ -36,7 +36,10 @@ html
 
 #xml_url <- "https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml"
 
-xml <- "https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml"
+#xml <- "https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_1.xml"
+
+xml <- "https://github.com/tagensingh/sps-data607-week7/blob/main/SPS-DATA-A-7_short.xml"
+
 xml <- GET(xml)
 xml <- rawToChar(xml$content)
 xml <- xmlParse(xml)
