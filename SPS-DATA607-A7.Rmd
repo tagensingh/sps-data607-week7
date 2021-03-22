@@ -50,8 +50,11 @@ xml
 json <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.json"
 json <- GET(json)
 json <- rawToChar(json$content)
-#json <- fromJSON(json)
-#JSON <- data.frame(json)
+json <- fromJSON(json)
+jsdf <- data.frame(json)
+
+jsdf
+
 ```
 
 
