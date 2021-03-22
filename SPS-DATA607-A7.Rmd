@@ -34,7 +34,7 @@ html
 
 ```{r xml}
 
-xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_1.xml"
+xml <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml"
 xml <- GET(xml)
 xml <- rawToChar(xml$content)
 xml <- xmlParse(xml)
@@ -44,6 +44,16 @@ xml <- data.frame(xml)
 xml
 
 ```
+
+
+```{r xml2}
+
+#xml_url <- "https://raw.githubusercontent.com/tagensingh/sps-data607-week7/main/SPS-DATA-A-7_short.xml"
+
+#xml_file <- getURL(xml_url)
+
+```
+
 
 
 ## R Markdown
